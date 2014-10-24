@@ -24,6 +24,31 @@ else
     let g:colors_name="ron"
 endif
 
+"over 80 charactors one line, show other color
+hi Over80 guifg=fg guibg=yellow
+match DiffAdd '\%>80v.*'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => taglist 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"open taglist when open file
+let Tlist_Auto_Open=1
+
+"taglist at the left window
+let Tlist_Use_Right_Window=0
+
+"don't know what this means
+let Tlist_File_Fold_Auto_Close=1
+
+"Tlist only show one file
+let Tlist_Show_One_File=1
+
+"Exit when Tlist is the last one window
+let Tlist_Exit_OnlyWindow=1
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope setting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
